@@ -1,0 +1,52 @@
+{
+  "Post": "grbl_plasma_floating_z",
+  "PostArgs": "",
+  "Stock": {
+    "create": "FromBase",
+    "version": 1,
+    "xneg": "1.0 mm",
+    "xpos": "1.0 mm",
+    "yneg": "1.0 mm",
+    "ypos": "1.0 mm",
+    "zneg": "1.0 mm",
+    "zpos": "1.0 mm"
+  },
+  "Tolerance": "0.01",
+  "ToolController": [
+    {
+      "dir": "Forward",
+      "hfeed": "0.0 mm/s",
+      "hrapid": "0.0 mm/s",
+      "label": "T1: HeroCut",
+      "name": "T1__HeroCut",
+      "nr": 1,
+      "speed": 0.0,
+      "tool": {
+        "cornerRadius": 0.0,
+        "cuttingEdgeAngle": 0.0,
+        "cuttingEdgeHeight": Infinity,
+        "diameter": 1.0,
+        "flatRadius": 0.5,
+        "lengthOffset": 0.0,
+        "material": "Carbide",
+        "name": "HeroCut",
+        "tooltype": "Engraver",
+        "version": 1
+      },
+      "version": 1,
+      "vfeed": "0.0 mm/s",
+      "vrapid": "0.0 mm/s",
+      "xengine": [
+        {
+          "expr": "${SetupSheet}.VertRapid",
+          "prop": "VertRapid"
+        },
+        {
+          "expr": "${SetupSheet}.HorizRapid",
+          "prop": "HorizRapid"
+        }
+      ]
+    }
+  ],
+  "Version": 1
+}
