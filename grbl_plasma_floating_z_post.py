@@ -98,15 +98,13 @@ POST_OPERATION = ''''''
 TOOL_CHANGE = ''''''
 SUPPRESS_TOOL_CHANGE = 0
 
-FLOATING_Z_COMMANDS_TURN_ON = '''G10 L20 P0 Z0
-G29
-G10 L20 P0 Z0
-G0 Z8
+FLOATING_Z_COMMANDS_TURN_ON = '''
+G0 Z0
 M3 S1000
 '''
 
 FLOATING_Z_COMMANDS_TURN_OFF = '''M5
-G0 Z12
+G0 Z4
 '''
 
 # to distinguish python built-in open function from the one declared below
