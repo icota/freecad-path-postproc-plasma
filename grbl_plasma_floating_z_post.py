@@ -297,7 +297,7 @@ def parse(pathobj):
                     elif param == 'T':
                         outstring.append(param + str(int(c.Parameters['T'])))
                     elif param == 'Z':
-                        if int(c.Parameters['Z']) != turn_off_plasma_z and int(c.Parameters['Z']) != turn_on_plasma_z:
+                        if int(c.Parameters['Z']) != turn_off_plasma_z and int(c.Parameters['Z']) != turn_on_plasma_z and int(c.Parameters['Z']) != 0:
                             print("do nothing")
                             # outstring.append(param + '0')
 
